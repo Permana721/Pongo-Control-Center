@@ -1,41 +1,59 @@
 # Pongo Control Center
 
-A lightweight, terminal-based RGB keyboard backlight controller for Axioo Pongo 725 laptops running Arch Linux and its derivatives (CachyOS, EndeavourOS, Manjaro).
+Interactive terminal-based RGB keyboard backlight controller for Axioo Pongo 725 laptops running Arch Linux and its derivatives.
+
+## Features
+
+- Dynamic interactive CLI menu
+- ANSI 24-bit True Color gradient slider
+- Mouse and keyboard navigation support
+- Standalone C binary with no external GUI dependencies
+- Automatic kernel driver management
 
 ## Requirements
 
-* Arch Linux or an Arch-based distribution
-* `base-devel` package group
-* `git`
+- Arch Linux or derivatives (CachyOS, EndeavourOS, Manjaro)
+- base-devel package group
+- git
 
 ## Installation
 
-Clone the repository and build the package using `makepkg`:
+Clone the repository and build the package using makepkg:
 
 ```bash
-git clone [https://github.com/Permana721/Pongo-Control-Center.git](https://github.com/Permana721/Pongo-Control-Center.git)
+git clone https://github.com/Permana721/Pongo-Control-Center.git
 cd Pongo-Control-Center
 makepkg -si
-The installer will automatically handle dependencies (including tuxedo-keyboard-dkms), compile the source code, set the required binary permissions, and load the kernel module.
 
-Usage
-Run the following command in your terminal:
+```
 
-Bash
+The installer automatically resolves all necessary dependencies (including tuxedo-keyboard-dkms), compiles the binary, and sets the required hardware execution permissions.
+
+## Usage
+
+Run the following command in any terminal:
+
+```bash
 pongo-control-center
-Controls
-Up / Down Arrows: Navigate menus
 
-Enter: Confirm selection
+```
 
-Left / Right Arrows or < / >: Adjust slider values
+### Navigation Controls
 
-Mouse Click / Drag: Adjust slider values directly
+* Up / Down Arrows: Navigate menu items
+* Enter: Confirm selection
+* Left / Right Arrows (or < / >): Adjust sliders
+* Mouse Click: Drag or click directly on sliders to change values
 
-Uninstallation
-To remove the package from your system:
+## Uninstallation
 
-Bash
+To remove the application from your system:
+
+```bash
 sudo pacman -R pongo-control-center
-License
+
+```
+
+## License
+
 This project is licensed under the GPL-3.0 License.
