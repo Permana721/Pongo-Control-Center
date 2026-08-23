@@ -1,0 +1,7 @@
+post_install() {
+    modprobe tuxedo_keyboard || true
+}
+
+post_upgrade() {
+    modprobe tuxedo_keyboard || true
+}
