@@ -13,21 +13,22 @@ Interactive terminal-based RGB keyboard backlight controller for Axioo Pongo 725
 ## Requirements
 
 - Arch Linux or derivatives (CachyOS, EndeavourOS, Manjaro)
-- base-devel package group
-- git
+- `base-devel` package group
+- `git`
+- AUR helper (`yay` or `paru`)
 
 ## Installation
 
-Clone the repository and build the package using makepkg:
+Clone the repository and build the package using `yay`:
 
 ```bash
 git clone https://github.com/Permana721/Pongo-Control-Center.git
 cd Pongo-Control-Center
-makepkg -si
+yay -Bi .
 
 ```
 
-The installer automatically resolves all necessary dependencies (including tuxedo-keyboard-dkms), compiles the binary, and sets the required hardware execution permissions.
+The installer automatically resolves all necessary dependencies (including `clevo-drivers-dkms-git`), compiles the binary, and sets the required hardware execution permissions.
 
 ## Usage
 
@@ -42,7 +43,7 @@ pongo-control-center
 
 * Up / Down Arrows: Navigate menu items
 * Enter: Confirm selection
-* Left / Right Arrows (or < / >): Adjust sliders
+* Left / Right Arrows (or `<` / `>`): Adjust sliders
 * Mouse Click: Drag or click directly on sliders to change values
 
 ## Uninstallation
@@ -50,7 +51,7 @@ pongo-control-center
 To remove the application from your system:
 
 ```bash
-sudo pacman -R pongo-control-center
+sudo pacman -Rns pongo-control-center
 
 ```
 
