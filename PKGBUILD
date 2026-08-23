@@ -12,11 +12,9 @@ source=("main.c")
 sha256sums=('SKIP')
 
 build() {
-    cd "$pkgname"
     gcc main.c -O3 -o pongo-control-center
 }
 
 package() {
-    cd "$pkgname"
     install -Dm4755 pongo-control-center "$pkgdir/usr/bin/pongo-control-center"
 }
