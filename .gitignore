@@ -1,2 +1,10 @@
-/pongo-control-center
-/src
+# Arch Linux package builds and archives
+*.pkg.tar.zst
+*.pkg.tar.xz
+src/
+pkg/
+*.SRCINFO~
+
+# Temporary binary files
+a.out
+pongo-control-center
