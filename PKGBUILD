@@ -5,10 +5,10 @@ pkgdesc="Interactive RGB Control Center for Axioo Pongo 725 laptops"
 arch=('x86_64')
 url="https://github.com/Permana721/Pongo-Control-Center"
 license=('GPL')
-depends=('glibc' 'tuxedo-keyboard-dkms-git')
+depends=('glibc' 'clevo-drivers-dkms-git')
 makedepends=('git')
 install=$pkgname.install
-source=("git+https://github.com/Permana721/pongo-control-center.git")
+source=("main.c")
 sha256sums=('SKIP')
 
 build() {
