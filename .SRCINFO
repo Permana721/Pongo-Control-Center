@@ -8,7 +8,7 @@ pkgbase = pongo-control-center
 	license = GPL
 	makedepends = git
 	depends = glibc
-	depends = tuxedo-keyboard-dkms
+	depends = tuxedo-keyboard-dkms-git
 	source = git+https://github.com/Permana721/pongo-control-center.git
 	sha256sums = SKIP
 
